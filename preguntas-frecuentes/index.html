@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h2 {
+            font-size: 30px;
+            color: #f5a623;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            font-weight: 500
+        }
+        .faq-section {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            position: relative;
+            cursor: pointer;
+            background-color: transparent;
+            padding: 10px;
+            border-bottom: 1px solid #f5a623;
+            border-radius: 0px;
+            margin-bottom: 10px;
+        }
+        .faq-question::after {
+            content: "";
+            display: block;    
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.15s ease;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath fill='%23f5a623' d='M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z'/%3E%3C/svg%3E");
+        }
+        .faq-question.open::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 20px 20px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="faq-section">
+         <h2>Depto</h2>
+        <div class="faq-question">¿Se permiten invitados? </div>
+        <div class="faq-answer">No esta permitido el ingreso de personas adicionales a la reservacion. En caso de querer contar con el ingreso de invitado es necesario darlo de alta como huesped. El costo por huesped extra es de $200 mxn. 
+            </div>
+    
+     <div class="faq-question">¿Donde debo tirar la basura?</div>
+        <div class="faq-answer">Existe un contenedor al final del pasillo, a un lado de las escaleras de emergencia. 
+           </div>
+
+           <div class="faq-question">¿Puedo dejar mis maletas antes del check in?</div>
+        <div class="faq-answer">No es posible dejar maletas en lobby. Comunicate con nosotros para coordinar la recepcion de tu equipaje o la espera en amenidades hasta la hora de check in (3pm)
+    </div>
+    
+    <div class="faq-question">¿Puedo ingresar mascotas al alojamiento?</div>
+        <div class="faq-answer">No es posible ingresar mascotas al alojamiento.
+    
+           </div>
+    
+    <h2>Amenidades</h2>
+    <div class="faq-question">¿Donde se encuentra la piscina y en que horario puedo hacer uso?</div>
+        <div class="faq-answer">La piscina se encuentra en el Piso 30. El horario es de 8 am a 12am.  Para acceder solo necesitas tu tarjeta de elevador. Recuerda acatar el reglamento.</div>
+    
+    <div class="faq-question">¿Puedo tomar bebidas en la alberca? </div>
+        <div class="faq-answer">Esta probido tomar cualquier bebida en envase de vidrio o lata. Les recomendamos llevar su bebida en un Yeti, con el fin de evitar llamadas de atencion por el personal de seguridad. 
+       </div>
+    
+    
+    <div class="faq-question">¿Puedo usar los asadores?</div>
+        <div class="faq-answer">Se requiere previa reservacion y esta sujeto a disponibilidad.
+            El costo es de $300 mxn. El horario es de 5 am a 12am. No incluye carbon ni carne. 
+              Contactanos para mas detalles.</div>
+
+              <div class="faq-question">¿En que horario puedo ir al GYM?</div>
+        <div class="faq-answer">El horario del gym es de L-D de 6am a 12pm. 
+            Recuerda limpiar con las toallas humedas los aparatos que llegues a utilizar dentro del gym, asi como acomodar las pesas o tapetes en su lugar designado.  
+            Se seguiere calzado comodo y toalla de sudor. Pedir al guardia de Lobby encender el clima en caso de verlo apagado.
+            </div>
+    
+    <h2>Estacionamiento</h2>
+    <div class="faq-question">¿Donde puedo estacionar mi vehiculo?</div>
+        <div class="faq-answer">Contamos con cajon de estacionamiento ubicado en Piso E4, cajon 
+            460. El costo es $100mxn por noche. Contáctanos para más detalles.</div>
+    
+    <h2>Limpieza</h2>
+    <div class="faq-question">¿Necesito lavar sabanas y/o toallas al salir?</div>
+        <div class="faq-answer">No es necesario realizar la limpieza de sabanas y toallas. 
+            Solo sugerimos limpiar lo ensuciado como platos y vasos, asi como cabellos o derrames en superficies.. 
+           Esto con el fin de evitar cargos extras.
+        </div>
+    
+
+    <h2>Seguridad</h2>
+    <div class="faq-question">¿Puedo acceder al depto a cualquier hora?</div>
+        <div class="faq-answer">Es correcto, contamos con acceso y seguridad 24/7. Por lo que puedas salir e ingresar sin restriccion de horario 
+            Recuerda mostrar tu codigo QR al hacer el check in. 
+            </div>
+    <div class="faq-question">¿Puedo fumar o vapear en la Torre? </div>
+        <div class="faq-answer">No existe un área designada para fumar, por lo que no es posible fumar cigarro o vapeador en ninguna area de la torre, area de amenidades asi como dentro del depto. 
+            Evita ser sancionado por el departmento de seguridad. Cuotas por arriba de los $1250 mxn.
+            </div>
+    
+
+
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                this.classList.toggle("open")
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
