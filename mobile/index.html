@@ -5,8 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <title>Sitio Mobile</title>
+  <title>Rentas Vacacionales | Airhome Mty</title>
   <style>
+    :root {
+      --dark-color: #010101;
+      --light-color: #f5f5f5;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,7 +20,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #f0f0f0;
+      background-color: var(--light-color);
     }
 
     .container {
@@ -26,40 +31,64 @@
 
     .box {
       width: 300px;
-      height: 100px;
-      background-color: black;
+      height: 70px;
+      background-color: var(--dark-color);
+      border: 2px solid var(--dark-color);
       /* Todos los recuadros negros */
-      color: white;
+      color: var(--light-color);
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1.2em;
+      font-size: 20px;
       text-align: center;
-      border-radius: 10px;
+      border-radius: 15px;
       transition: background-color 0.3s ease;
     }
 
     .box:hover {
-      background-color: #333;
-      /* Color más oscuro al pasar el ratón */
+      background-color: #f5f5f5;
+      border: 2px solid var(--dark-color);
+    }
+
+    .box:hover a {
+      color: var(--dark-color);
     }
 
     a {
       text-decoration: none;
-      color: white;
+      color: #f5f5f5;
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      letter-spacing: 0.9px;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      clip: rect(1px, 1px, 1px, 1px);
+      overflow: hidden;
+      height: 1px;
+      width: 1px;
+      word-wrap: normal;
+    }
+
+    .img-responsive {
+      max-width: 250px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 50%;
+      margin-bottom: 40px;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Airhome</h1>
-    <div class="box"><a href="https://www.airhome.cc/">Property Management</a></div>
+    <h1 class="visually-hidden">Airhome - Property Management</h1>
+    <img src="/images/logo-white.png" class="img-responsive" alt="Airhome logo" loading="lazy"/>
+    <div class="box"><a href="/preguntas-frecuentes/">Preguntas Frecuentes</a></div>
     <div class="box"><a href="https://www.instagram.com/airhomemty/">Instagram</a></div>
     <div class="box"><a href="https://wa.me/message/5O54WHXNMJFLF1/">Whatsapp</a></div>
   </div>
