@@ -107,7 +107,44 @@
             <img src="logo2.png" alt="Lobby Access Logo">
             <p>Lobby Access / Acceso al Lobby</p>
         </div>
+
         <!-- Agrega aquí más recuadros según lo necesites -->
+        <div class="box" onclick="openModal('modal3')">
+            <img src="logo3.png" alt="Apartment Access Logo">
+            <p>Apartment Access / Acceso al Depto</p>
+        </div>
+        <div class="box" onclick="openModal('modal4')">
+            <img src="logo4.png" alt="Elevator Card Logo">
+            <p>Elevator Card / Tarjeta Elevador</p>
+        </div>
+        <div class="box" onclick="openModal('modal5')">
+            <img src="logo5.png" alt="Wifi Logo">
+            <p>Wifi</p>
+        </div>
+        <div class="box" onclick="openModal('modal6')">
+            <img src="logo6.png" alt="House Rules Logo">
+            <p>House Rules / Reglas de la Casa</p>
+        </div>
+        <div class="box" onclick="openModal('modal7')">
+            <img src="logo7.png" alt="Amenities Logo">
+            <p>Amenities / Amenidades</p>
+        </div>
+        <div class="box" onclick="openModal('modal8')">
+            <img src="logo8.png" alt="Parking Logo">
+            <p>Parking / Estacionamiento</p>
+        </div>
+        <div class="box" onclick="openModal('modal9')">
+            <img src="logo9.png" alt="Extra Guest Logo">
+            <p>Extra Guest / Huesped Extra</p>
+        </div>
+        <div class="box" onclick="openModal('modal10')">
+            <img src="logo10.png" alt="Contact Host Logo">
+            <p>Contact Host / Contactar al Anfitrión</p>
+        </div>
+    </div>
+        <!-- Agrega aquí más recuadros según lo necesites -->
+
+        
     </div>
 
     <!-- Modales -->
@@ -127,6 +164,72 @@
         </div>
     </div>
 
+
+<div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <p>Información de Acceso al Departamento</p>
+            <a href="https://airhome.cc/deptobarriow" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <p>Información de Tarjeta de Elevador</p>
+            <a href="https://airhome.cc/elevadorbarriow" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <p>Información de Wifi</p>
+            <a href="https://airhome.cc/wifibarriow" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <p>Información de Reglas de la Casa</p>
+            <a href="https://airhome.cc/reglasbarriow" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <p>Información de Amenidades</p>
+            <a href="https://airhome.cc/amenidadesbarriow" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <p>Información de Estacionamiento</p>
+            <a href="https://airhome.cc/parkingbarriow" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <p>Información de Huesped Extra</p>
+            <a href="https://airhome.cc/extrahuespedbarriow" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <p>Información de Contacto con el Anfitrión</p>
+            <a href="https://airhome.cc/hostcontact" target="_blank">Ver más</a>
+        </div>
+    </div>
+
+    
     <script>
         function openModal(modalId) {
             document.getElementById(modalId).style.display = "flex";
