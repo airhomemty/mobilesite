@@ -1,2 +1,45 @@
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-545d5b5e-0107-4d93-b483-b1150332ca0f" data-elfsight-app-lazy></div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retención con Stripe</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <h2>Reservación de monto</h2>
+    <form id="payment-form">
+        <div id="card-element">
+            <!-- Stripe Elemento de Tarjeta -->
+        </div>
+        <button id="submit">Reservar $400 MXN</button>
+        <div id="error-message"></div>
+    </form>
+
+    <script>
+        const stripe = Stripe('pk_live_51Oa2pvGAaWYGvVRT9XPOtL278Eg6m2q4llMkxr3BziNwjLhtfAlj2uWH2Q5NsozQDc5y1tBCtn0Y0P8BQHnboQc400tUDMGTeT');
+        const elements = stripe.elements();
+        const cardElement = elements.create('card');
+        cardElement.mount('#card-element');
+
+        document.getElementById('payment-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const response = await fetch('/create-payment-intent', { method: 'POST' });
+            const { clientSecret } = await response.json();
+
+            const { error, paymentIntent } = await stripe.confirmCardPayment(clientSecret, {
+                payment_method: {
+                    card: cardElement,
+                },
+                setup_future_usage: 'on_session' // Configura retención
+            });
+
+            if (error) {
+                document.getElementById('error-message').textContent = error.message;
+            } else if (paymentIntent && paymentIntent.status === 'requires_capture') {
+                alert('Se ha retenido el monto de $400 MXN correctamente');
+            }
+        });
+    </script>
+</body>
+</html>
