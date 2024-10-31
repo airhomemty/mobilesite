@@ -1,47 +1,21 @@
+ <!-- Whats app chat -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BarrioW by Airhome</title>
-    <style>
-        /* Estilos básicos para el encabezado */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #f8f8f8;
-        }
-
-        .left, .right {
-            display: flex;
-            align-items: center;
-        }
-
-        .right a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: #007bff;
-        }
-
-        .right a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Integración con Elfsight y Stripe</title>
+    <script src="https://static.elfsight.com/platform/platform.js" defer></script>
+    <script defer src="https://js.stripe.com/v3/pricing-table.js"></script>
 </head>
 <body>
-    <header>
-        <!-- Título a la izquierda -->
-        <div class="left">
-            <h1>BarrioW by Airhome</h1>
-        </div>
-        
-        <!-- Teléfono y correo a la derecha -->
-        <div class="right">
-            <a href="tel:+525654304442">+52 565 430 4442</a>
-            <a href="mailto:airhomemty@gmail.com">Envíanos un correo electrónico</a>
-        </div>
-    </header>
+    <!-- Contenedor para Elfsight -->
+    <div class="elfsight-app-545d5b5e-0107-4d93-b483-b1150332ca0f" data-elfsight-app-lazy></div>
+    
+    <!-- Contenedor para Stripe Pricing Table -->
+    <stripe-pricing-table 
+        pricing-table-id="prctbl_1QFQRiGAaWYGvVRTfkkLRV4X"
+        publishable-key="pk_live_51Oa2pvGAaWYGvVRT9XPOtL278Eg6m2q4llMkxr3BziNwjLhtfAlj2uWH2Q5NsozQDc5y1tBCtn0Y0P8BQHnboQc400tUDMGTeT">
+    </stripe-pricing-table>
 </body>
 </html>
