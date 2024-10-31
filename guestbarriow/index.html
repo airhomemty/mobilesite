@@ -54,7 +54,7 @@
 <!DOCTYPE html>
   <html lang="en">
  <head> 
-   <meta charset="UTF-8">-->
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Guest Home Page</title> 
     <style>
@@ -342,9 +342,24 @@
 </html>
 
  <!-- Whats app chat -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-545d5b5e-0107-4d93-b483-b1150332ca0f" data-elfsight-app-lazy></div>
-<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-<stripe-pricing-table pricing-table-id="prctbl_1QFQRiGAaWYGvVRTfkkLRV4X"
-publishable-key="pk_live_51Oa2pvGAaWYGvVRT9XPOtL278Eg6m2q4llMkxr3BziNwjLhtfAlj2uWH2Q5NsozQDc5y1tBCtn0Y0P8BQHnboQc400tUDMGTeT">
-</stripe-pricing-table>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración con Elfsight y Stripe</title>
+    <script src="https://static.elfsight.com/platform/platform.js" defer></script>
+    <script defer src="https://js.stripe.com/v3/pricing-table.js"></script>
+</head>
+<body>
+    <!-- Contenedor para Elfsight -->
+    <div class="elfsight-app-545d5b5e-0107-4d93-b483-b1150332ca0f" data-elfsight-app-lazy></div>
+    
+    <!-- Contenedor para Stripe Pricing Table -->
+    <stripe-pricing-table 
+        pricing-table-id="prctbl_1QFQRiGAaWYGvVRTfkkLRV4X"
+        publishable-key="pk_live_51Oa2pvGAaWYGvVRT9XPOtL278Eg6m2q4llMkxr3BziNwjLhtfAlj2uWH2Q5NsozQDc5y1tBCtn0Y0P8BQHnboQc400tUDMGTeT">
+    </stripe-pricing-table>
+</body>
+</html>
+
