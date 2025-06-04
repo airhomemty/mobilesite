@@ -1,96 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <title>Property Management | Airhome Mty</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tu Host - Administración Airbnb</title>
   <style>
-    :root {
-      --dark-color: #010101;
-      --light-color: #f5f5f5;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: var(--light-color);
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .box {
-      width: 300px;
-      height: 70px;
-      background-color: var(--dark-color);
-      border: 2px solid var(--dark-color);
-      /* Todos los recuadros negros */
-      color: var(--light-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 20px;
-      text-align: center;
-      border-radius: 15px;
-      transition: background-color 0.3s ease;
-    }
-
-    .box:hover {
-      background-color: #f5f5f5;
-      border: 2px solid var(--dark-color);
-    }
-
-    .box:hover a {
-      color: var(--dark-color);
-    }
-
-    a {
-      text-decoration: none;
-      color: #f5f5f5;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      letter-spacing: 0.9px;
-    }
-
-    .visually-hidden {
-      position: absolute !important;
-      clip: rect(1px, 1px, 1px, 1px);
-      overflow: hidden;
-      height: 1px;
-      width: 1px;
-      word-wrap: normal;
-    }
-
-    .img-responsive {
-      max-width: 250px;
-      height: auto;
-      margin: 0 auto;
-      border-radius: 50%;
-      margin-bottom: 40px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
+    header { background: #0057a0; color: white; padding: 2rem; text-align: center; }
+    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1, h2 { color: #0057a0; }
+    ul { padding-left: 1.5rem; }
+    .servicio { margin-bottom: 1rem; }
+    footer { text-align: center; padding: 2rem; }
+    .iconos a { margin: 0 10px; font-size: 1.5rem; color: #0057a0; text-decoration: none; }
+    img { border-radius: 50%; max-width: 150px; }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1 class="visually-hidden">Airhome - Property Management</h1>
-    <img src="/images/logo-white.png" class="img-responsive" alt="Airhome logo" loading="lazy"/>
-    <div class="box"><a href="https://www.instagram.com/airhomemty/">Instagram</a></div>
-    <div class="box"><a href="https://wa.me/message/5O54WHXNMJFLF1/">Whatsapp</a></div>
-  </div>
-</body>
 
+  <header>
+    <h1>Tu Host - Administración Profesional en Airbnb</h1>
+    <p>9 años como anfitrión desde 2016 · 2 años como administrador</p>
+    <img src="tu-foto.jpg" alt="Tu foto"/>
+  </header>
+
+  <section>
+    <h2>Sobre mí</h2>
+    <p>Hola, soy un anfitrión con más de 9 años de experiencia en Airbnb y fundador del grupo <strong>Airbnb Monterrey</strong> en Facebook. Ofrezco servicios integrales de administración para propietarios que desean maximizar sus ingresos sin complicaciones.</p>
+  </section>
+
+  <section>
+    <h2>Servicios</h2>
+    <div class="servicio"><strong>🧹 Limpieza profesional:</strong> Coordinación y supervisión de limpiezas entre estancias.</div>
+    <div class="servicio"><strong>📈 Estrategia de precios:</strong> Ajustes inteligentes para maximizar ocupación e ingresos.</div>
+    <div class="servicio"><strong>💬 Atención a huéspedes:</strong> Contestación de mensajes y resolución de inquietudes 24/7.</div>
+    <div class="servicio"><strong>🛠️ Mantenimiento:</strong> Gestión preventiva y correctiva del inmueble.</div>
+    <div class="servicio"><strong>📊 Estados de resultados:</strong> Reportes mensuales claros y detallados.</div>
+    <div class="servicio"><strong>📱 App personalizada:</strong> Control total de tus listados y servicios adicionales.</div>
+    <div class="servicio"><strong>🛡️ Seguridad:</strong> Control de accesos y protocolos de seguridad.</div>
+    <div class="servicio"><strong>💼 Asesoramiento fiscal:</strong> Apoyo en obligaciones fiscales y deducciones.</div>
+    <div class="servicio"><strong>🧾 Facturación y declaración:</strong> Gestión de facturas y declaraciones mensuales.</div>
+  </section>
+
+  <footer>
+    <div class="iconos">
+      <a href="https://wa.me/521XXXXXXXXXX" target="_blank">📱 WhatsApp</a>
+      <a href="https://instagram.com/tuhost" target="_blank">📸 Instagram</a>
+    </div>
+    <p>&copy; 2025 Tu Host · Monterrey, MX</p>
+  </footer>
+
+</body>
 </html>
